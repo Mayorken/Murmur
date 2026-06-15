@@ -131,4 +131,3 @@ Murmur's app lock adds a passcode and optional device biometrics to restrict acc
 ## Reminders
 
 Daily recording reminders can be enabled from the Settings panel. Reminder notifications rotate through ideas like daily affirmations, to-do lists, gratitude logs, idea journals, and voice diaries. Murmur also prompts before leaving the page if a recording is active or paused.
-docs: document Sia SDK integration for storage and restore
