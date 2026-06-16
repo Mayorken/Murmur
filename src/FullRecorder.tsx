@@ -93,7 +93,7 @@ const reminderSeriesIdeas = [
 ];
 
 const recorderPrompts = [
-  'drop the thought =���n+�',
+  'drop the thought 🎙️',
   'brain dump in 3... 2...',
   'vent, plan, or just vibe',
   'say it before it disappears',
@@ -110,7 +110,7 @@ const moodTags = [
   'diary entry',
 ];
 
-const fallbackMoodTag = 'G�� random';
+const fallbackMoodTag = 'random thought';
 
 const preferredMimeTypes = [
   'audio/webm;codecs=opus',
@@ -156,7 +156,7 @@ function stopStream(stream: MediaStream | null): void {
 }
 
 function getMoodEmoji(mood: string): string {
-  return (mood || fallbackMoodTag).split(' ')[0] || 'G��';
+  return (mood || fallbackMoodTag).split(' ')[0] || '🎙️';
 }
 
 function getMemoMood(memo: VoiceMemo): string {
@@ -1429,7 +1429,7 @@ export default function FullRecorder() {
             onClick={handleMicButtonClick}
           >
             <span className="mic-icon" aria-hidden="true">
-              =���n+�
+              🎙️
             </span>
             <span>
               {recordingState === 'idle'
